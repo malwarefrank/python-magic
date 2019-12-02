@@ -215,7 +215,7 @@ def maybe_decode(s):
     if str == bytes:
         return s
     else:
-        return s.decode('utf-8')
+        return s.decode('utf-8', errors='replace')
 
 
 def coerce_filename(filename):
